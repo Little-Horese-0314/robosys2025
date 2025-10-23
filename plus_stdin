@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-
+# SPDX-FileCopyrightText: 2024 Koma Tsutsumi
 import sys
 
 ans = 0.0
 for line in sys.stdin:
-    ans +=float (line)
+    try:
+        ans +=float (line)
+    except: 
+        ans += float(line)
 
 print (ans)
